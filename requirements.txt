@@ -1,3 +1,7 @@
-streamlit 
-
--e .
+streamlit
+pandas
+numpy
+scikit-learn
+numpy
+requests
+pickle
