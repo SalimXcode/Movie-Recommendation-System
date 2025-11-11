@@ -79,3 +79,39 @@ if st.button('show recommendation'):
 
         
 
+st.markdown("""
+<div style="text-align:center;margin-bottom:8px;">
+    <span style="
+        font-size:23px;
+        font-weight:700;
+        font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+        color: #fff;
+        letter-spacing:1.2px;
+        padding-bottom:2px;">
+        Made by Salim
+    </span>
+</div>
+<div style="display:flex;justify-content:center;">
+    <a href="https://github.com/SalimXcode" target="_blank" style="
+        text-decoration:none;
+        ">
+        <span style="
+            font-family: 'Segoe UI', 'Roboto Mono', monospace;
+            font-size:1.09rem;
+            font-weight:700;
+            color:#fff;
+            background:#202231;
+            border-left:4px solid #05d8fe;
+            border-radius:7px;
+            padding:6px 24px;
+            margin-top:5px;
+            box-shadow:0 1px 10px rgba(5,216,254,0.09);
+            transition: box-shadow 0.3s;
+            display:inline-block;
+        ">
+            <span style="color:#05d8fe;">&#128187; </span>
+            GitHub : SalimXcode
+        </span>
+    </a>
+</div>
+""", unsafe_allow_html=True)
