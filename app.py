@@ -21,7 +21,7 @@ similarity_data = load_similarity()
 similarity_data = load_similarity()
 
 def fetch_poster(movie_id):
-    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&language=en-US"
+    url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={api_key}&language=en-US"
     data = requests.get(url)
     data = data.json()
     
