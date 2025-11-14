@@ -2,11 +2,8 @@ import pickle
 import streamlit as st
 import requests
 import numpy as np
-import os
 
-import os
-api_key = st.secrets["API_KEY"]
-
+API_KEY = "200f55a73b5f4a2e262e576c28c671e4"
 
 def load_similarity():
     with open('artificats/similarity_part1.pkl', 'rb') as f:
@@ -80,6 +77,28 @@ if st.button('show recommendation'):
         st.text(recommended_movies_name[4])
         st.image(recommended_movies_poster[4] if recommended_movies_poster[4] else "default_poster.jpg")
 
+# st.markdown("""
+# <div style="
+#     display: flex;
+#     justify-content: center;
+#     margin-bottom: 18px;
+# ">
+#     <span style="
+#         font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+#         font-size: 1.25rem;
+#         font-weight: 700;
+#         color: #fff;
+#         background: #262730;
+#         border-left: 5px solid #05d8fe;
+#         border-radius: 8px;
+#         padding: 7px 28px;
+#         letter-spacing: 1.3px;
+#         box-shadow: 0 1px 12px rgba(5,216,254,0.09);
+#     ">
+#         Made by SalimXcode
+#     </span>
+# </div>
+# """, unsafe_allow_html=True)
         
 
 st.markdown("""
